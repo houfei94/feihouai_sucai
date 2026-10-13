@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>飞猴AI · 产品推广素材库</title>
+<style>
+:root{--bg:#0a0e1a;--bg2:#111731;--card:#151d38;--line:#26304f;--gold:#d8b25c;--gold-hi:#faecC4;
+--txt:#e9edf7;--dim:#98a2bd;--ok:#00b42a;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 700px at 70% -10%,#1a2246 0%,#0a0e1a 60%);color:var(--txt);
+font:15px/1.7 "Microsoft YaHei",system-ui,sans-serif;padding:0 0 60px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+header{padding:46px 0 26px;text-align:center;border-bottom:1px solid var(--line);margin-bottom:26px}
+header h1{font-size:30px;letter-spacing:2px;background:linear-gradient(180deg,#faecc4,#d8b25c 55%,#a67928);
+-webkit-background-clip:text;background-clip:text;color:transparent}
+header p{color:var(--dim);margin-top:8px;font-size:14px}
+.tabs{display:flex;gap:12px;justify-content:center;margin:24px 0 30px;flex-wrap:wrap}
+.tab{padding:11px 30px;border:1px solid var(--line);border-radius:30px;cursor:pointer;color:var(--dim);
+background:var(--bg2);transition:.2s;font-size:15px}
+.tab.on{color:#fff;border-color:var(--accent);background:linear-gradient(180deg,rgba(216,178,92,.18),rgba(216,178,92,.06));
+box-shadow:0 0 0 1px var(--accent) inset}
+.tab small{display:block;font-size:12px;color:#7d88a6;margin-top:2px}
+.tab.on small{color:#b9c2da}
+.pane{display:none}.pane.on{display:block}
+h2.sec{font-size:19px;margin:34px 0 16px;padding-left:12px;border-left:4px solid var(--gold);line-height:1.3}
+h2.sec span{font-size:13px;color:var(--dim);font-weight:400;margin-left:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.2s}
+.card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.card img{width:100%;display:block;background:#0b1120}
+.card .meta{padding:12px 14px}
+.card .t{font-weight:700;font-size:14px}
+.card .u{color:var(--dim);font-size:12.5px;margin-top:4px;line-height:1.5}
+.card .fn{color:#6f7a99;font-size:11.5px;margin-top:7px;word-break:break-all;font-family:Consolas,monospace}
+.cp{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:14px}
+.cp>.hd{display:flex;align-items:center;justify-content:space-between;padding:13px 16px;cursor:pointer}
+.cp>.hd b{font-size:15px}.cp>.hd .r{color:var(--dim);font-size:12.5px}
+.cp .body{display:none;border-top:1px solid var(--line);padding:16px 18px}
+.cp.open .body{display:block}
+.btn{padding:5px 14px;border:1px solid var(--gold);color:var(--gold-hi);background:rgba(216,178,92,.1);
+border-radius:6px;cursor:pointer;font-size:12.5px;transition:.15s}
+.btn:hover{background:rgba(216,178,92,.22)}
+.btn.g{border-color:#2f6b45;color:#7ee0a2;background:rgba(0,180,42,.12)}
+.md h4{font-size:16px;margin:20px 0 8px;color:var(--gold-hi)}
+.md h5{font-size:14.5px;margin:16px 0 6px;color:#cdd6ec}
+.md p{color:#c3cbdf;margin:6px 0;font-size:14px}
+.md ul{margin:6px 0 6px 20px;color:#c3cbdf;font-size:14px}
+.md li{margin:3px 0}
+.md blockquote{border-left:3px solid var(--gold);padding:4px 0 4px 12px;color:#aab4cf;margin:8px 0;font-size:14px}
+.md table{border-collapse:collapse;width:100%;margin:10px 0;font-size:13.5px}
+.md th,.md td{border:1px solid var(--line);padding:7px 10px;text-align:left}
+.md th{background:#1b2544;color:var(--gold-hi)}
+.md hr{border:0;border-top:1px solid var(--line);margin:16px 0}
+.md code{background:#0d1327;padding:1px 5px;border-radius:4px;font-family:Consolas,monospace;font-size:13px}
+.md pre{background:#0d1327;padding:10px 12px;border-radius:8px;overflow:auto;margin:8px 0}
+.md pre code{background:none;padding:0}
+.notice{background:rgba(216,178,92,.07);border:1px solid rgba(216,178,92,.3);border-radius:12px;
+padding:14px 18px;color:#c9d0e4;font-size:13.5px;margin-top:30px}
+.notice b{color:var(--gold-hi)}
+footer{text-align:center;color:#5f6b88;font-size:12.5px;margin-top:34px}
+.toast{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(20px);background:#00b42a;
+color:#fff;padding:9px 22px;border-radius:24px;opacity:0;transition:.25s;pointer-events:none;font-size:14px;z-index:99}
+.toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>飞猴AI · 产品推广素材库</h1>
+  <p>8 张爆款海报 · 8 份推广文案 · 统一深蓝黑 × 香槟金品牌语言　|　生成于 2026-10-13</p>
+</header>
+<div class="tabs" id="tabs"></div>
+<div id="panes"></div>
+<div class="notice">
+  <b>对外投放合规巡检清单：</b>
+  ① 不使用「最 / 第一 / 唯一 / 顶级」等绝对化用语；
+  ② 效率与成本数据标注口径（如「低至几毛钱」为 API 成本口径、「90%+ 降本」为对比外包参考值）；
+  ③ 不做「保证涨粉 / 保证变现 / 保证提分」等结果承诺；
+  ④ 对外物料不出现内部成本口径、人员安排、未确认的排期与定制承诺；
+  ⑤ 涉及合同、价格与授权范围变更，需经对应负责人确认后再对外发出。
+</div>
+<footer>飞猴AI · 产品运营推广素材 · 内部使用，对外发布前请完成合规巡检</footer>
+</div>
+<div class="toast" id="toast">已复制到剪贴板</div>
+<script>
+const DATA = [{"key": "ppt2video", "name": "PPT转视", "tagline": "一键 PPT 转视频，讲解更轻松", "audience": "教培老师 · 企业培训 · 知识博主", "acc": "#766af6", "posters": [{"file": "01_PPT转视_主视觉_核心卖点.png", "rel": "PPT转视/海报/01_PPT转视_主视觉_核心卖点.png"}, {"file": "02_PPT转视_痛点_为什么这么难.png", "rel": "PPT转视/海报/02_PPT转视_痛点_为什么这么难.png"}, {"file": "03_PPT转视_对比_成本与效率.png", "rel": "PPT转视/海报/03_PPT转视_对比_成本与效率.png"}, {"file": "04_PPT转视_方案_授权与奖励.png", "rel": "PPT转视/海报/04_PPT转视_方案_授权与奖励.png"}], "copies": [{"id": "ppt2video-【PPT转视】01_朋友圈与社群文案.md", "title": "朋友圈与社群文案", "lines": 68, "text": "# PPT转视 · 朋友圈 / 社群推广文案\n\n> 可直接复制。正文已按「钩子 / 看点 / 背书」三行结构压到最精简，话题统一一行不换行。\n> 配图建议：`海报/01_主视觉` 发朋友圈九宫格首图；`03_对比` 用于朋友圈长图 / 社群。\n\n---\n\n## 一、朋友圈 · 精简版（推荐，3 行 + 话题）\n\n老师最该省下的，是录课那 2 小时。\n上传 PPT，AI 写讲稿、克隆你的声音，10 分钟出一条带字幕的讲解视频。\n本地部署，课件不外流，一套课件就能批量转在线课程。\n\n#PPT转视频 #微课制作 #教师必备工具 #AI课件 #知识付费\n\n---\n\n## 二、朋友圈 · 共鸣版（适合教师 / 培训岗人群）\n\n**做一节视频课，为什么这么难？**\n备课、批作业、教研已经排满，还要抽 2~4 小时录课剪课；\n会做 PPT，但剪辑、字幕、配乐全是新的学习成本；\n形象包袱、紧张忘词，状态不好就得重录好几遍。\n\n现在换个做法：**PPT 上传进去，讲解视频出来。**\nAI 自动拆页 → 逐页生成讲稿 → 克隆你的声音配音 → 一键成片，带字幕、带封面、可直接发布。\n一套课件约 10 分钟出片，三尺寸封面（9:16 / 3:4 / 4:3）自动生成，视频号、公众号、小程序都能发。\n\n**数据私有是硬指标**：本地独立部署，课件不经过任何第三方服务器。\n教培老师 / 企业内训 / 知识博主都适用，同款工具的对比表我放在评论区。\n\n#PPT转视频 #微课制作 #企业培训 #教师减负 #AI提效 #知识付费\n\n---\n\n## 三、社群 / 私信 · 一句话触达（群发不打扰）\n\n> 群里做课的老师看过来：上传 PPT 就能出讲解视频，AI 写稿 + 克隆你自己的声音，10 分钟一条，本地部署不担心课件外流。需要演示视频的扣 1，我私发给你。\n\n---\n\n## 四、私聊 · 三句话跟进话术\n\n1. 「您平时做视频课，是自己录还是找人做？自己录大概一节要多久？」\n2. 「有个工具是把 PPT 直接转成讲解视频——AI 逐页写讲稿，配音用您自己的声音克隆，一套课件 10 分钟左右出片，三尺寸封面自动生成。」\n3. 「它是本地部署的，课件不出您电脑。我发个演示视频给您看看效果？」\n\n---\n\n## 五、海报 / 名片 · 标语备选（≤14 字）\n\n- 上传 PPT，一键生成讲解视频\n- 10 分钟打造一门爆款微课\n- 把做课的时间，还给你自己\n- 课件不用改，视频自动来\n- 你的声音，你的课，AI 来剪\n\n---\n\n## 六、发布小贴士\n\n| 项 | 建议 |\n|---|---|\n| 发布时段 | 工作日 21:00–22:30（老师备课/刷手机高峰）、周日 20:00 |\n| 配图顺序 | 第 1 张主视觉海报 → 第 2 张对比表 → 第 3 张产品实拍 |\n| 首评 | 自己补一条：「需要的扣『微课』，我把演示视频和报价单发你」 |\n| 敏感信息 | 对外**不要**提内部成本口径、人员安排、未确认的排期与定制承诺 |\n| 广告合规 | 「90%+ 降本」属对比性表述，对外投放前建议改为「最高可省九成外包费用」，并保留测算口径备注 |\n"}, {"id": "ppt2video-【PPT转视】02_短视频口播稿.md", "title": "短视频口播稿", "lines": 88, "text": "# PPT转视 · 短视频口播稿（3 条）\n\n> 每条均按「钩子 → 痛点 → 方案 → 证明 → 行动」推进，单句 ≤ 20 字，可直接配音。\n> 画面对应：产品界面录屏为主，字幕高亮关键词。\n\n---\n\n## 稿一 · 痛点共鸣型（约 45 秒 · 朋友圈 / 视频号）\n\n【钩子】\n做课的老师，别再熬夜录课了。\n\n【痛点】\n备完课已经晚上十点。\n打开摄像头，忘词，重录。\n剪完字幕，两小时没了。\n\n【转场】\n其实你的 PPT，本来就能变成视频课。\n\n【方案】\n上传课件，AI 逐页写讲稿。\n配置你的声音克隆，它就用你的声音讲。\n点一下生成，十分钟出片。\n字幕、封面、动效，全都有。\n\n【证明】\n三尺寸封面自动生成。\n本地部署，课件不出一台电脑。\n\n【行动】\n想要演示的，评论区扣「微课」。\n我把成片效果发给你看。\n\n---\n\n## 稿二 · 效率对比型（约 40 秒 · 抖音 / 视频号）\n\n【钩子】\n一节视频课，你花四小时，我花十分钟。\n\n【对比】\n自己录：布置、打光、重录、剪辑，两到四小时。\n找外包：沟通、返工、等交付，三到七天。\n\n【方案】\n上传 PPT，AI 写讲稿。\n克隆你的声音配音。\n一键生成带字幕的讲解视频。\n一套课件，十分钟。\n\n【证明】\n封面三种尺寸自动出。\n视频号、公众号、小程序直接发。\n本地部署，课件数据私有。\n\n【行动】\n想让你的课件先跑一条试试的，\n评论区扣「1」。\n\n---\n\n## 稿三 · 15 秒强钩子（投流 / 前贴片）\n\n【钩子】\n上传一份 PPT，还你一节视频课。\n\n【卖点三连】\nAI 写讲稿。\n克隆你的声音。\n十分钟出片，封面自动生成。\n\n【行动】\n本地部署，课件不外流。\n演示视频，评论区自取。\n\n---\n\n## 拍摄建议\n\n| 项 | 建议 |\n|---|---|\n| 画面 | 全程产品录屏 + 关键步骤放大，60% 时间给「上传 → 生成 → 成片」 |\n| 字幕 | 数字与关键词高亮（10 分钟、三尺寸、本地部署） |\n| 节奏 | 每 3~5 秒一个画面切换，避免长镜头静态页面 |\n| 首帧 | 直接用 `海报/01_主视觉`，保证封面即信息 |\n| 结尾 | 停留 2 秒二维码 / 引导语，便于截图识别 |\n| 合规 | 不讲「保证提分」「唯一」等绝对化承诺；效率数据标注为实测口径 |\n"}, {"id": "ppt2video-【PPT转视】03_多平台分发文案.md", "title": "多平台分发文案", "lines": 105, "text": "# PPT转视 · 多平台分发文案\n\n> 同一套素材，按各平台用户习惯改写。标题均已控制在平台推荐长度内。\n\n---\n\n## 1. 视频号\n\n**标题（≤16 字）**：上传 PPT，十分钟出一条视频课\n\n**正文**：\n做课最耗时的不是备课，是录课。\n上传 PPT，AI 写好逐页讲稿，用你自己的克隆声音配音，十分钟生成带字幕的讲解视频。\n三尺寸封面自动生成，视频号、公众号直接发。\n本地部署，课件不出电脑。\n\n#PPT转视频 #微课制作 #教师减负 #企业培训 #AI工具\n\n---\n\n## 2. 抖音\n\n**标题/文案（带钩子，前 3 秒抓人）**：\n一节视频课，别人录四小时，我十分钟。\n上传 PPT → AI 写讲稿 → 克隆我的声音 → 出片。\n封面三尺寸自动生成，本地部署课件不外流。\n想要演示的，评论区扣「微课」。\n\n#PPT转视频 #AI工具 #微课制作 #教师日常 #知识付费 #职场效率\n\n---\n\n## 3. 小红书\n\n**标题（≤20 字）**：\n教师必备｜PPT 直接变成视频课，10 分钟出片\n\n**正文**：\n做课两小时，剪片两小时，一周就过去了 😮‍💨\n后来我换了做法——**把 PPT 上传，视频自动出来**。\n\n📌 它做了什么\n① AI 按每页内容写讲解稿，还能指定讲解角色（语文/数学/英语老师）\n② 克隆我自己的声音配音，听起来就是我在讲\n③ 一键生成带字幕的成片，90% 的剪辑活省掉了\n④ 9:16 / 3:4 / 4:3 三种封面自动生成，直接发\n\n💡 最让我放心的是：**本地部署**，课件不上传别人的服务器。\n\n期末复习课、考点精讲、内训 SOP 都能这么出片。\n有需要演示视频的宝子可以留言～\n\n#PPT转视频 #微课制作 #教师备课 #知识博主 #AI工具推荐 #效率工具 #企业培训\n\n---\n\n## 4. 公众号\n\n**标题**：\n把做课的时间，还给你自己——PPT 转视频全流程拆解\n\n**导语**：\n备课、批作业、教研已经排满，再抽 2~4 小时录课剪课，很多老师干脆放弃了视频课。\n这篇文章讲清楚一件事：如果你的课件已经做好了，视频课其实可以自动生成。\n\n**正文结构**：\n1. **痛点**：做一节视频课的三道坎——没时间、不会剪、不敢出镜\n2. **做法**：上传 PPT → AI 逐页写讲稿 → 克隆你的声音 → 一键成片（6 步流程图）\n3. **成片长什么样**：三种封面尺寸、字幕逐句对齐、动效自动上\n4. **对比**：真人录制 / 外包代做 / PPT转视 的耗时与成本对照表\n5. **谁适合用**：教培老师、企业培训、知识博主\n6. **授权方案**：1 年 998 元 / 2 年 1598 元 / 永久 2998 元，本地部署\n7. **行动**：留言或扫码，领取演示视频与报价单\n\n**结尾引导**：\n想先看成片效果的，扫码加微信备注「PPT转视」，我把演示视频和报价单发你。\n\n---\n\n## 5. 知乎 / 百家号（搜索长尾）\n\n**标题**：有没有能把 PPT 自动转成讲解视频的工具？实测分享一下\n\n**正文梗概**：\n- 需求来源：课件已有，缺的是讲解视频，不想出镜、不会剪辑\n- 实测流程：上传 → 拆页 → 讲稿 → 配音 → 成片，约 10 分钟\n- 三个关键点：讲稿质量、声音克隆的自然度、封面是否够用\n- 注意事项：数据是否本地部署（课件涉密场景必看）\n- 适合人群与不适合人群（要有真实边界，缺互动性真人 IP 的场景仍建议真人出镜）\n- 价格与授权方式\n\n---\n\n## 分发节奏建议\n\n| 平台 | 频次 | 素材重点 |\n|---|---|---|\n| 朋友圈 | 2 天 1 条 | 精简文案 + 主视觉海报 |\n| 视频号 | 每周 2 条 | 口播稿一 / 稿二 + 录屏 |\n| 抖音 | 每周 3 条 | 15 秒强钩子 + 40 秒对比型 |\n| 小红书 | 每周 3 篇 | 流程图解 + 教师场景 |\n| 公众号 | 每周 1 篇 | 深度拆解 + 报价引导 |\n| 知乎 | 每月 2 篇 | 长尾搜索问答 |\n\n**合规提醒**：所有平台文案均不得出现「最」「第一」「唯一」「保证提分/保证涨粉」等绝对化承诺；涉及效率与成本数据时标注为实测/参考口径。\n"}, {"id": "ppt2video-【PPT转视】04_卖点与金句弹药库.md", "title": "卖点与金句弹药库", "lines": 118, "text": "# PPT转视 · 卖点与金句弹药库\n\n> 所有条目可直接复制进海报、口播、落地页、销售话术。已按用途分类。\n> ⚠️ 对外投放前请做一次合规巡检：不出现「最/第一/唯一」等绝对化用语；效率与成本数据标注为实测或参考口径。\n\n---\n\n## 一、一句话定位（≤14 字，用于海报 / 名片 / 首屏）\n\n| # | 标语 | 适用位 |\n|---|---|---|\n| 1 | 上传 PPT，一键生成讲解视频 | 主视觉首屏 |\n| 2 | 10 分钟打造一门爆款微课 | 朋友圈首图 |\n| 3 | 把做课的时间，还给你自己 | 落地页结尾 |\n| 4 | 课件不用改，视频自动来 | 短视频开头 |\n| 5 | 你的声音，你的课，AI 来剪 | 声音克隆卖点 |\n| 6 | 不用出镜，不用剪辑，不用学软件 | 痛点型文案 |\n\n---\n\n## 二、主标语（品牌 Slogan）\n\n> **一键 PPT 转视频，讲解更轻松。**\n\n副标：10 分钟打造一门爆款微课，企业 / 教学课件批量转在线视频。\n\n---\n\n## 三、四大核心卖点（标准表述）\n\n| 卖点 | 标准话术 | 支撑细节 |\n|---|---|---|\n| **AI 逐页写讲稿** | 上传即拆页，AI 按每页内容生成口播稿，可逐页编辑、可指定讲解角色 | 支持语文/数学/英语等自定义角色提示词 |\n| **克隆你的声音** | 配置一次声音 ID，之后每条视频都用你自己的声音讲 | 像真人录制一样自然，无需出镜 |\n| **一键成片带字幕** | 字幕逐句对齐语音，不用再手动卡轴 | 实时进度条，刷新不中断，后台继续生成 |\n| **三尺寸封面** | 9:16 / 3:4 / 4:3 一键产出 | 适配视频号、公众号、小程序 |\n\n**加分项**：本地独立部署 · 课件数据完全私有 · 支持超大课件\n\n---\n\n## 四、数字型卖点（最强转化）\n\n- **10 分钟**：一套课件出片\n- **90%+**：对比外包代做的降本幅度（对外建议表述：最高可省九成外包费用）\n- **3 种**：封面尺寸自动生成\n- **6 步**：从上传到发布的全流程\n- **2.7 元/天**：1 年授权的日均成本（998 元 ÷ 365 天）\n\n---\n\n## 五、痛点金句（共鸣用）\n\n1. 做课最耗时的，从来不是备课，是录课。\n2. 不是你不行，是传统方式太费时间。\n3. 备完课已经十点，还要打光、布景、重录。\n4. 会做 PPT，不代表会剪视频。\n5. 状态不好就要重录好几遍，录完又不想发出去。\n6. 一节视频课四小时，一周三个晚上就没了。\n7. 外包一条几百块，量大就是真金白银。\n8. 讲了一遍又一遍，学生想复习却没得看。\n\n---\n\n## 六、场景话术（按人群）\n\n**教培老师**\n> 期末复习课、考点精讲、作文指导——课件改好即出片，学生课后反复看，你不用再讲第二遍。\n\n**企业培训**\n> 岗位 SOP、安全规范、新人入职，一键转成视频课程，全员随时看，检查时拿得出培训记录。\n\n**知识博主**\n> 讲义、公众号文章、读书笔记批量转视频，一份内容多平台分发，不用重写一遍。\n\n---\n\n## 七、对比话术（三选一）\n\n**标准版**\n> 真人录制：2~4 小时 / 条；外包代做：3~7 天 + 200~800 元 / 分钟；PPT转视：约 10 分钟，本地部署。\n\n**极简版**\n> 同样的课件，自己录四小时，外包等三天，PPT转视十分钟。\n\n**成本版**\n> 外包按分钟收费，一节课几十分钟；PPT转视按年授权，平均每天约 2.7 元。\n\n---\n\n## 八、信任背书（解决\"敢不敢用\"）\n\n- 本地独立部署，课件数据完全私有，不经第三方服务器\n- 支持超大课件，无需改造原有备课习惯\n- 全程可编辑、可预览、可修改，不是黑盒出片\n- 老客户续费统一 8.8 折\n- 推荐有奖：1 套 30%，累计最高 50%\n\n---\n\n## 九、行动召唤（CTA）\n\n- 微信扫码，获取演示视频与报价单\n- 免费申请演示，感受一键成片的效率\n- 想要的评论区扣「微课」\n- 备注「PPT转视」，更快通过好友验证\n\n---\n\n## 十、销售话术 · 三问三答\n\n| 客户疑问 | 应答要点 |\n|---|---|\n| 讲稿质量怎么样？ | AI 逐页生成，可按页编辑修改，也支持指定讲解角色与提示词，改到满意再出片 |\n| 声音像不像我？ | 克隆本人的音色，配置一次长期复用，不是通用机器配音 |\n| 课件安全吗？ | 本地独立部署，数据不上传服务器，涉密课件也能用 |\n| 我不会装软件怎么办？ | 界面简洁，上传、生成、下载三步走，演示一次即可独立操作 |\n| 能做竖屏吗？ | 支持 9:16 / 3:4 / 4:3 三尺寸封面与视频比例，抖音视频号都能发 |\n"}]}, {"key": "chujing", "name": "替我出镜", "tagline": "你输出观点，AI 替你出镜", "audience": "讲师博主 · 创业者 · 转型副业", "acc": "#38b2f6", "posters": [{"file": "01_替我出镜_主视觉_核心卖点.png", "rel": "替我出镜/海报/01_替我出镜_主视觉_核心卖点.png"}, {"file": "02_替我出镜_痛点_为什么这么难.png", "rel": "替我出镜/海报/02_替我出镜_痛点_为什么这么难.png"}, {"file": "03_替我出镜_对比_成本与效率.png", "rel": "替我出镜/海报/03_替我出镜_对比_成本与效率.png"}, {"file": "04_替我出镜_方案_授权与奖励.png", "rel": "替我出镜/海报/04_替我出镜_方案_授权与奖励.png"}], "copies": [{"id": "chujing-【替我出镜】01_朋友圈与社群文案.md", "title": "朋友圈与社群文案", "lines": 70, "text": "# 替我出镜 · 朋友圈 / 社群推广文案\n\n> 可直接复制。正文已按「钩子 / 看点 / 背书」三行结构压到最精简，话题统一一行不换行。\n> 配图建议：`海报/01_主视觉` 朋友圈首图；`03_对比` 社群长图；`04_方案` 私聊报价时发。\n\n---\n\n## 一、朋友圈 · 精简版（推荐，3 行 + 话题）\n\n你有观点，只是缺一个敢出镜的自己。\n粘贴一句文案，AI 拆分页、克隆你的声音，三分钟出一条口播短视频。\n不用露脸，本地部署，单条成本压到几毛钱。\n\n#AI口播视频 #替我出镜 #短视频获客 #知识博主 #副业变现\n\n---\n\n## 二、朋友圈 · 共鸣版（适合创业者 / 实体老板）\n\n**想做视频号，卡在哪一步？**\n不是没内容，是卡在「拍」：镜头前紧张、忘词、形象包袱，布景打光还得 NG 重来；\n文案写好了，还要剪字幕、配 BGM、卡节奏，外包一条几十上百块；\n有观点有时间窗外的事，却抽不出 2 小时录一条。\n\n换个思路：**你只负责输出观点，出镜交给 AI。**\n粘贴口播稿 → AI 语义分页 → 匹配 30+ 版式动效 → 克隆你的声音配音 → 成片。\n字幕跟着语音走，封面三尺寸自动生成，抖音、视频号、公众号通用。\n\n**约 3 分钟一条，单条成本低至几毛钱。**\n本地部署，文案不用交给任何人。\n\n#AI口播 #替我出镜 #短视频获客 #创业者 #实体店引流 #副业变现\n\n---\n\n## 三、社群 / 私信 · 一句话触达\n\n> 群里想做视频号但不敢露脸的朋友：把文案粘进去，AI 帮你出镜配音成片，3 分钟一条，成本几毛钱。想看效果的扣 1，我发演示视频。\n\n---\n\n## 四、私聊 · 三句话跟进话术\n\n1. 「您现在做短视频，是自己拍还是找人剪？一条大概要花多久？」\n2. 「有个工具是文案进去、成片出来——AI 拆分页、配动效，配音克隆您自己的声音，约 3 分钟一条，单条成本几毛钱，不用露脸。」\n3. 「它是本地部署的，文案不上传第三方。我发个演示视频给您看看成片效果？」\n\n---\n\n## 五、海报 / 名片 · 标语备选（≤14 字）\n\n- 你输出观点，AI 替你出镜\n- 文案进去，成片出来\n- 不敢露脸，也能做口播\n- 有观点，就值得被看见\n- 三分钟一条，成本几毛钱\n- 不用露脸，不用开口，不用剪辑\n\n---\n\n## 六、发布小贴士\n\n| 项 | 建议 |\n|---|---|\n| 发布时段 | 工作日 12:30–13:30、21:00–22:30；周末 10:00 / 21:00 |\n| 配图顺序 | 主视觉 → 痛点卡 → 对比表（成本差是转发诱因） |\n| 首评 | 补一条：「想要演示的扣『口播』，我把成片效果发你」 |\n| 转化设计 | 先发成片，再发价格；不要一上来就晒报价 |\n| 敏感信息 | 对外**不要**提及内部成本口径、人员安排、未确认的排期与定制承诺 |\n| 广告合规 | 「低至几毛钱」需注明为 API 成本口径；不做「保证涨粉」「保证变现」等承诺 |\n"}, {"id": "chujing-【替我出镜】02_短视频口播稿.md", "title": "短视频口播稿", "lines": 89, "text": "# 替我出镜 · 短视频口播稿（3 条）\n\n> 每条均按「钩子 → 痛点 → 方案 → 证明 → 行动」推进，单句 ≤ 20 字，可直接配音。\n> 画面对应：产品界面录屏 + 成片展示，成片画面至少占 40%。\n\n---\n\n## 稿一 · 痛点共鸣型（约 45 秒 · 视频号 / 朋友圈）\n\n【钩子】\n有观点，却不敢出镜，这条视频送给你。\n\n【痛点】\n镜头前紧张，忘词，要重录。\n文案写好了，还要剪字幕、配音乐。\n一条视频，两小时起，发不发都不甘心。\n\n【转场】\n其实你只需要写文案。\n\n【方案】\n粘贴你的口播稿。\nAI 自动拆分页，配好动效。\n克隆你的声音，它替你讲。\n三分钟，成片就出来了。\n\n【证明】\n字幕跟着语音走。\n封面三尺寸自动生成。\n不露脸，不出镜，不剪辑。\n\n【行动】\n想要演示的，评论区扣「口播」。\n我把成片发给你看。\n\n---\n\n## 稿二 · 效率对比型（约 40 秒 · 抖音 / 视频号）\n\n【钩子】\n一条口播视频，别人忙两天，我三分钟。\n\n【对比】\n自己拍：布景、打光、忘词、重录，两小时起。\n找代剪：沟通、等交付，半天到一天，几十上百一条。\n\n【方案】\n你写文案，或者让 AI 帮你写。\n系统自动拆分页、配动效。\n用你自己的声音配音。\n三分钟出片，几毛钱一条。\n\n【证明】\n30 多种版式，自动匹配。\n抖音、视频号、公众号都能发。\n本地部署，文案不外传。\n\n【行动】\n想做但一直没开始的，\n评论区扣「1」，我发演示。\n\n---\n\n## 稿三 · 15 秒强钩子（投流 / 前贴片）\n\n【钩子】\n不敢露脸，也能做口播视频。\n\n【卖点三连】\n文案进去，成片出来。\n克隆你的声音，AI 替你出镜。\n三分钟一条，成本几毛钱。\n\n【行动】\n有观点，就值得被看见。\n演示视频，评论区自取。\n\n---\n\n## 拍摄建议\n\n| 项 | 建议 |\n|---|---|\n| 画面 | 前 3 秒放成片（视觉冲击），中间录屏演示，结尾再放 2 秒成片 |\n| 字幕 | 数字与关键词高亮（3 分钟、几毛钱、30+ 版式、不露脸） |\n| 节奏 | 每 3~5 秒切换画面，成片片段可多机位式重复出现 |\n| 首帧 | 直接用 `海报/01_主视觉`，保证封面即信息 |\n| 声音 | 配音务必用克隆音色，与本人口播形成\"一致性\"说服力 |\n| 合规 | 不做「保证涨粉/变现」承诺；成本数据标注为 API 成本口径 |\n"}, {"id": "chujing-【替我出镜】03_多平台分发文案.md", "title": "多平台分发文案", "lines": 107, "text": "# 替我出镜 · 多平台分发文案\n\n> 同一套素材，按各平台用户习惯改写。标题均已控制在平台推荐长度内。\n\n---\n\n## 1. 视频号\n\n**标题（≤16 字）**：你输出观点，AI 替你出镜\n\n**正文**：\n有经验、有案例、有观点，却卡在「拍视频」这一步。\n粘贴口播文案，替我出镜自动拆页排版、克隆你的声音、生成动态 PPT 短视频。\n约 3 分钟一条，单条成本低至几毛钱。\n本地部署，文案不经手第三方。\n\n#AI口播 #替我出镜 #短视频获客 #知识博主 #副业变现\n\n---\n\n## 2. 抖音\n\n**标题/文案（前 3 秒抓人）**：\n不敢露脸，也能做口播视频。\n文案进去 → AI 拆页 → 克隆我的声音 → 成片出来。\n三分钟一条，成本几毛钱，30+ 版式动效随便挑。\n想要演示的，评论区扣「口播」。\n\n#AI口播 #替我出镜 #短视频创业 #知识博主 #副业 #实体店引流 #AI工具\n\n---\n\n## 3. 小红书\n\n**标题（≤20 字）**：\n不出镜做口播视频｜文案粘进去，3 分钟出成片\n\n**正文**：\n想做视频号很久了，一直卡在「不敢露脸」🙈\n后来发现一个做法：**你写文案，AI 替你出镜**。\n\n📌 它做了什么\n① 粘贴口播稿（或用内置 AI 按主题生成），自动语义分页\n② 匹配 30+ 版式动效，卡片入场，字幕跟着语音走\n③ 克隆我自己的声音配音，听起来就是我在讲\n④ 9:16 / 3:4 / 4:3 三尺寸封面自动生成，抖音、视频号、公众号通用\n\n💰 成本是真的低：约 3 分钟一条，单条低至几毛钱（API 成本口径）。\n🔒 最安心的一点：**本地部署**，文案不上传别人的服务器。\n\n适合：想做口播但不敢露脸的、有观点没时间的、想低成本起步副业的。\n想要演示的姐妹留言「口播」～\n\n#AI口播 #替我出镜 #短视频运营 #副业变现 #知识博主 #不出镜视频 #AI工具推荐\n\n---\n\n## 4. 公众号\n\n**标题**：\n有观点，就值得被看见——不出镜也能稳定更新口播短视频\n\n**导语**：\n很多人不是没有内容，是卡在「拍」这一步：镜头前紧张、忘词、要布景打光，然后再花两小时剪字幕配音乐。\n这篇讲清楚：如果观点已经在你脑子里，出镜这件事可以交给 AI。\n\n**正文结构**：\n1. **痛点**：不敢出镜、不会剪、没时间\n2. **做法**：输入文案 → 语义分页 → 30+ 版式动效 → 克隆声音配音 → 成片（6 步流程）\n3. **成片长什么样**：动态 PPT 口播、字幕跟随语音、三尺寸封面\n4. **对比**：真人出镜 / 外包代剪 / 替我出镜 的出镜压力、成本、速度、隐私\n5. **谁适合用**：讲师与知识博主、创业者与实体老板、转型中的兼职人群\n6. **授权方案**：1 年 798 元 / 2 年 1298 元 / 永久 2698 元，本地部署\n7. **行动**：扫码或留言，领取演示视频与报价\n\n**结尾引导**：\n想先看成片效果的，扫码加微信备注「替我出镜」，我把演示视频发你。\n\n---\n\n## 5. 知乎 / 百家号（搜索长尾）\n\n**标题**：不想露脸怎么做口播短视频？实测一个本地部署的 AI 方案\n\n**正文梗概**：\n- 需求来源：有内容、有观点，但不出镜、不剪辑\n- 实测流程：输入文案 → AI 分页 → 配音 → 成片，约 3 分钟\n- 三个关键点：分页节奏是否自然、声音克隆的像真度、版式是否够用\n- 成本测算：单条几毛钱（API 成本口径），对比代剪几十上百一条\n- 隐私：本地部署，文案不出本机（商业未公开内容场景必看）\n- 适合与不适合：适合观点型口播；不适合需要真人 IP 强互动、强场景展示的内容\n- 价格与授权方式\n\n---\n\n## 分发节奏建议\n\n| 平台 | 频次 | 素材重点 |\n|---|---|---|\n| 朋友圈 | 2 天 1 条 | 精简文案 + 主视觉 / 对比海报 |\n| 视频号 | 每周 2 条 | 口播稿一 / 稿二 + 成片展示 |\n| 抖音 | 每周 3 条 | 15 秒强钩子 + 40 秒对比型 |\n| 小红书 | 每周 3 篇 | 流程图解 + 「不出镜」情绪共鸣 |\n| 公众号 | 每周 1 篇 | 深度拆解 + 报价引导 |\n| 知乎 | 每月 2 篇 | 长尾搜索问答 |\n\n**合规提醒**：全平台均不得出现「最」「第一」「唯一」「保证涨粉/保证变现」等绝对化承诺；「低至几毛钱」标注为 API 成本口径。\n"}, {"id": "chujing-【替我出镜】04_卖点与金句弹药库.md", "title": "卖点与金句弹药库", "lines": 120, "text": "# 替我出镜 · 卖点与金句弹药库\n\n> 所有条目可直接复制进海报、口播、落地页、销售话术。已按用途分类。\n> ⚠️ 对外投放前请做一次合规巡检：不出现「最/第一/唯一」等绝对化用语；成本数据标注为 API 成本口径；不做涨粉与变现承诺。\n\n---\n\n## 一、一句话定位（≤14 字，用于海报 / 名片 / 首屏）\n\n| # | 标语 | 适用位 |\n|---|---|---|\n| 1 | 你输出观点，AI 替你出镜 | 主视觉首屏 |\n| 2 | 文案进去，成片出来 | 朋友圈首图 |\n| 3 | 不敢露脸，也能做口播 | 痛点型文案 |\n| 4 | 有观点，就值得被看见 | 落地页结尾 |\n| 5 | 三分钟一条，成本几毛钱 | 短视频开头 |\n| 6 | 不用露脸，不用开口，不用剪辑 | 卖点三连 |\n\n---\n\n## 二、主标语（品牌 Slogan）\n\n> **你输出观点，AI 替你出镜。**\n\n副标：输入文案，自动拆页排版、克隆你的声音、生成动态 PPT 短视频，适配抖音与视频号。\n\n---\n\n## 三、四大核心卖点（标准表述）\n\n| 卖点 | 标准话术 | 支撑细节 |\n|---|---|---|\n| **输入文案即出片** | 粘贴口播稿，或用内置 AI 按主题生成，长文案智能断句 | 语义分页，一段稿拆成有节奏的视觉分镜 |\n| **克隆你的声音** | 配置一次声音 ID，用你自己的声音讲解 | 像真人录制一样自然，无需出镜、无需开口 |\n| **30+ 版式动效** | 卡片入场动画 + 字幕内嵌跟随语音 | 匹配 30+ 标准化 PPT 版式，统一高级视觉 |\n| **三尺寸封面** | 9:16 / 3:4 / 4:3 一键产出 | 抖音、视频号、公众号多个发布场景通用 |\n\n**加分项**：本地部署 · 数据私有 · 实时进度条 · 刷新不中断 · 成片列表统一管理\n\n---\n\n## 四、数字型卖点（最强转化）\n\n- **约 3 分钟**：一条口播成片\n- **低至几毛钱**：单条成本（API 成本口径）\n- **30+**：现成版式动效\n- **3 种**：封面尺寸自动生成\n- **66.5 元/月**：1 年授权折合月成本（798 元 ÷ 12 月）\n\n---\n\n## 五、痛点金句（共鸣用）\n\n1. 不是没内容，是卡在「拍」这一步。\n2. 镜头前紧张、忘词、有形象包袱，录完又不想发。\n3. 文案写好了，还要剪字幕、配 BGM、卡节奏。\n4. 一个人做不来，外包一条几十上百，量一大就是真金白银。\n5. 有观点有时间窗，却抽不出整块时间。\n6. 想做视频号，但就是不想露脸。\n7. 每次录制状态不一样，声音也不像自己。\n8. 有经验、有案例、有观点，就是没人看见。\n\n---\n\n## 六、场景话术（按人群）\n\n**讲师 / 知识博主**\n> 课程、观点、干货内容多，批量把图文课件变成短视频，保持稳定更新频率，不用再为出镜发愁。\n\n**创业者 / 实体老板**\n> 没时间出镜拍视频，用 AI 做口播获客，讲清产品与观点，把内容成本压下来。\n\n**转型中的待业 / 兼职人群**\n> 不想露脸，也有能力做视频号：AI 帮你出镜、配音、成片，低成本起步一份副业。\n\n---\n\n## 七、对比话术（三选一）\n\n**标准版**\n> 真人出镜：出镜压力高 + 2~4 小时/条；外包代剪：几十~上百元/条 + 经手第三方；替我出镜：约 3 分钟/条，低至几毛钱，本地部署。\n\n**极简版**\n> 自己拍两小时，找人剪等一天，AI 出片三分钟。\n\n**成本版**\n> 代剪一条几十上百，替我出镜一条几毛钱（API 成本口径），一年省下的就是一台设备钱。\n\n---\n\n## 八、信任背书（解决\"敢不敢用\"）\n\n- 本地部署，文案与数据完全私有，不经手第三方\n- 内容可控：随时改文案，一键重出，不依赖与剪辑师的反复沟通\n- 声音一致：克隆本人音色，每条都是同一个\"你\"\n- 老客户续费统一 8.8 折\n- 推荐有奖：1 套 30%，累计最高 50%\n\n---\n\n## 九、行动召唤（CTA）\n\n- 微信扫码，申请演示\n- 有观点，就值得被看见\n- 想要的评论区扣「口播」\n- 备注「替我出镜」，更快通过好友验证\n- 免费申请演示，看一条成片再决定\n\n---\n\n## 十、销售话术 · 三问三答\n\n| 客户疑问 | 应答要点 |\n|---|---|\n| 分页自然吗？ | 语义分页 + 智能断句，一段稿拆成有节奏的分镜，也可手动调整 |\n| 声音像不像我？ | 克隆本人的音色，每条一致，不是通用机器配音 |\n| 文案安全吗？ | 本地部署，不上传第三方服务器，商业未公开内容也能用 |\n| 能做竖屏吗？ | 支持 9:16 竖屏，同时可出 16:9 横屏，抖音、视频号都能发 |\n| 版式会不会看腻？ | 30+ 标准化版式 + 动效包，可按风格切换，统一高级视觉 |\n| 我不会写文案怎么办？ | 内置 AI 可按主题直接生成口播稿，生成后仍可随时改 |\n"}]}];
+const USE = {"01": ["主视觉 · 核心卖点", "朋友圈首图 / 落地页首屏 / 抖音封面"], "02": ["痛点共鸣", "朋友圈长图 / 社群答疑 / 小红书配图"], "03": ["对比 · 成本与效率", "社群转发 / 私聊报价 / 公众号插图"], "04": ["方案 · 授权与奖励", "私聊成交 / 老客户转介绍 / 展架物料"]};
+
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function mdRender(src){
+  const lines = src.split('\n'); let out='', inPre=false, inTable=false;
+  const closeT=()=>{ if(inTable){out+='</table>';inTable=false;} };
+  for(let raw of lines){
+    let l = raw.replace(/\r$/,'');
+    if(/^```/.test(l)){ if(inPre){out+='</code></pre>';inPre=false;} else {closeT();out+='<pre><code>';inPre=true;} continue; }
+    if(inPre){ out+=esc(l)+'\n'; continue; }
+    if(/^\s*$/.test(l)){ closeT(); continue; }
+    if(/^---+$/.test(l)){ closeT(); out+='<hr>'; continue; }
+    if(/^> /.test(l)){ closeT(); out+='<blockquote>'+inline(l.replace(/^> /,''))+'</blockquote>'; continue; }
+    if(/^#### /.test(l)){ closeT(); out+='<h4>'+inline(l.slice(5))+'</h4>'; continue; }
+    if(/^### /.test(l)){ closeT(); out+='<h4>'+inline(l.slice(4))+'</h4>'; continue; }
+    if(/^## /.test(l)){ closeT(); out+='<h5>'+inline(l.slice(3))+'</h5>'; continue; }
+    if(/^# /.test(l)){ closeT(); continue; }
+    if(/^\|/.test(l)){
+      const cells = l.split('|').slice(1,-1).map(c=>c.trim());
+      if(!inTable){ out+='<table>'; inTable=true;
+        out+='<tr>'+cells.map(c=>'<th>'+inline(c)+'</th>').join('')+'</tr>';
+      } else if(/^[\|\-: ]+$/.test(l)) { continue; }
+      else { out+='<tr>'+cells.map(c=>'<td>'+inline(c)+'</td>').join('')+'</tr>'; }
+      continue;
+    }
+    closeT();
+    if(/^[-*] /.test(l)){ out+='<ul><li>'+inline(l.slice(2))+'</li></ul>'; continue; }
+    if(/^\d+\. /.test(l)){ out+='<ul><li>'+inline(l.replace(/^\d+\. /,''))+'</li></ul>'; continue; }
+    out+='<p>'+inline(l)+'</p>';
+  }
+  closeT(); if(inPre) out+='</code></pre>';
+  return out.replace(/<\/ul><ul>/g,'');
+}
+function inline(s){
+  return esc(s).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/`([^`]+)`/g,'<code>$1</code>');
+}
+function toast(){const t=document.getElementById('toast');t.classList.add('on');setTimeout(()=>t.classList.remove('on'),1400);}
+function copy(text,e){ e&&e.stopPropagation();
+  navigator.clipboard&&navigator.clipboard.writeText(text).then(toast).catch(()=>{
+    const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);
+    ta.select();document.execCommand('copy');ta.remove();toast();});}
+
+const tabs=document.getElementById('tabs'), panes=document.getElementById('panes');
+DATA.forEach((p,i)=>{
+  const b=document.createElement('div'); b.className='tab'+(i?'':' on');
+  b.style.setProperty('--accent',p.acc);
+  b.innerHTML='<div>'+p.name+'</div><small>'+p.audience+'</small>';
+  b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');document.querySelectorAll('.pane').forEach(x=>x.classList.remove('on'));
+    document.getElementById('pane-'+p.key).classList.add('on');
+    document.documentElement.style.setProperty('--accent',p.acc);};
+  tabs.appendChild(b);
+
+  const d=document.createElement('div'); d.className='pane'+(i?'':' on'); d.id='pane-'+p.key;
+  let h='<div style="text-align:center;color:#98a2bd;font-size:14px;margin-bottom:6px">'
+       +'<b style="color:#faecc4;font-size:17px">'+p.name+'</b> · '+p.tagline+'</div>';
+  h+='<h2 class="sec">爆款海报 <span>1242×2208 竖版，点击图片可新窗口查看原图</span></h2><div class="grid">';
+  p.posters.forEach(f=>{
+    const k=(f.file.split('_')[0]||'').trim();
+    const u=USE[k]||['推广素材','朋友圈 / 社群'];
+    h+='<div class="card"><a href="'+f.rel+'" target="_blank"><img src="'+f.rel+'" alt="'+f.file+'"></a>'
+      +'<div class="meta"><div class="t">'+u[0]+'</div><div class="u">'+u[1]+'</div>'
+      +'<div class="fn">'+f.file+'</div></div></div>';
+  });
+  h+='</div>';
+  h+='<h2 class="sec">推广文案 <span>点击展开，可一键复制 Markdown 原文</span></h2>';
+  p.copies.forEach(c=>{
+    h+='<div class="cp"><div class="hd"><div><b>'+c.title+'</b></div>'
+      +'<div style="display:flex;gap:8px;align-items:center">'
+      +'<span class="r">'+c.lines+' 行</span><button class="btn g" data-i="'+c.id+'">复制原文</button>'
+      +'<button class="btn" data-t="'+c.id+'">展开</button></div></div>'
+      +'<div class="body"><div class="md">'+mdRender(c.text)+'</div></div></div>';
+  });
+  d.innerHTML=h; panes.appendChild(d);
+});
+document.documentElement.style.setProperty('--accent',DATA[0].acc);
+document.addEventListener('click',e=>{
+  const t=e.target.closest('button'); if(!t) return;
+  if(t.dataset.t){ const b=t.closest('.cp'); b.classList.toggle('open');
+    t.textContent=b.classList.contains('open')?'收起':'展开'; return; }
+  if(t.dataset.i){ const c=DATA.flatMap(p=>p.copies).find(x=>x.id===t.dataset.i); c&&copy(c.text); }
+});
+</script>
+</body>
+</html>
